@@ -1,0 +1,17 @@
+@import "./App/App.scss";
+
+body {
+  font-family: "Montserrat", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  @include responsive(desktop) {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
