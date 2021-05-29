@@ -1,17 +1,20 @@
 @import "../../../App.scss";
 
 .card {
-  width: 335px;
-  height: 255px;
-  border-radius: 10px;
-  position: relative;
-  display: flex;
-  align-items: flex-end;
   margin-bottom: 20px;
   @include responsive(desktop) {
-    width: 340px;
-    height: 340px;
     margin-bottom: 70px;
+  }
+  &__wrap {
+    width: 335px;
+    height: 255px;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    @include responsive(desktop) {
+      width: 340px;
+      height: 340px;
+    }
   }
   &__img {
     width: 100%;
@@ -46,4 +49,8 @@
       margin-bottom: 20px;
     }
   }
+}
+
+.card__link:link {
+  text-decoration: none;
 }

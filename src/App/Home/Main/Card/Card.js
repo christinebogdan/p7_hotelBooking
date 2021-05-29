@@ -1,11 +1,22 @@
+import React from "react";
 import "./Card.scss";
+import { Link } from "react-router-dom";
 
-export function Card(props) {
-  return (
-    <div className="card" key={props.id}>
-      <img src={props.cover} alt="" className="card__img"></img>
-      <div className="card__layer"></div>
-      <h2 className="card__title">{props.title}</h2>
-    </div>
-  );
+class Card extends React.Component {
+  render() {
+    return (
+      // where do I need to set the key? Here or in Main?
+      <li className="card">
+        <Link to={`/accommodations/${this.props.id}`} className="card__link">
+          <div className="card__wrap">
+            <img src={this.props.cover} alt="" className="card__img"></img>
+            <div className="card__layer"></div>
+            <h2 className="card__title">{this.props.title}</h2>
+          </div>
+        </Link>
+      </li>
+    );
+  }
 }
+
+export default Card;

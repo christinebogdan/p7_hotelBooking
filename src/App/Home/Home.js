@@ -1,12 +1,17 @@
 import "./Home.scss";
-import { Hero } from "./Hero/Hero";
-import { Main } from "./Main/Main";
+import Hero from "./Hero/Hero";
+import Main from "./Main/Main";
+import React from "react";
 
-export function Home() {
-  return (
-    <div className="home">
-      <Hero />
-      <Main />
-    </div>
-  );
+class Home extends React.Component {
+  render() {
+    return (
+      <div className="home">
+        <Hero />
+        <Main />
+      </div>
+    );
+  }
 }
+
+export default Home;
