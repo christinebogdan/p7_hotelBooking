@@ -1,0 +1,14 @@
+@import "../../App.scss";
+
+.gallery {
+  width: 335px;
+  height: 225px;
+  border-radius: 10px;
+  margin-top: 20px;
+  @include responsive(desktop) {
+    width: 1240px;
+    height: 415px;
+    border-radius: 25px;
+    margin-top: 63px;
+  }
+}

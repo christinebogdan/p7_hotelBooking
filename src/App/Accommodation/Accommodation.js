@@ -1,15 +1,19 @@
 import React from "react";
 import { withRouter } from "react-router";
+import "./Accommodation.scss";
+import Gallery from "./Gallery/Gallery";
+import Main from "./Main/Main";
 
 class Accommodation extends React.Component {
   // what is this syntax:
   // let { match {params}} = this.props;
 
   render() {
+    let id = this.props.match.params.id;
     return (
-      <div>
-        <h1>Hi</h1>
-        <p>This is the id: {this.props.match.params.id}</p>
+      <div className="accommodation">
+        <Gallery id={id} />
+        <Main />
       </div>
     );
   }
