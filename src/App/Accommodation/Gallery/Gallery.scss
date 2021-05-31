@@ -1,14 +1,60 @@
 @import "../../App.scss";
 
 .gallery {
-  width: 335px;
-  height: 225px;
-  border-radius: 10px;
-  margin-top: 20px;
+  margin-top: 30px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   @include responsive(desktop) {
-    width: 1240px;
-    height: 415px;
-    border-radius: 25px;
-    margin-top: 63px;
+    margin-top: 20px;
+  }
+  &__image {
+    height: 225px;
+    width: calc(100vw - 40px);
+    object-fit: cover;
+    border-radius: 10px;
+    @include responsive(desktop) {
+      border-radius: 25px;
+      height: 415px;
+      width: calc(100vw - 200px);
+    }
+  }
+}
+.active {
+  display: block;
+}
+
+.inactive {
+  display: none;
+}
+
+.arrow-left {
+  position: absolute;
+  width: 12px;
+  height: 20px;
+  z-index: 10;
+  left: 6px;
+  cursor: pointer;
+  @include responsive(desktop) {
+    top: 168px;
+    left: 24px;
+    width: 47px;
+    height: 80px;
+  }
+}
+
+.arrow-right {
+  position: absolute;
+  width: 12px;
+  height: 20px;
+  z-index: 10;
+  right: 6px;
+  cursor: pointer;
+  @include responsive(desktop) {
+    top: 168px;
+    right: 24px;
+    width: 47px;
+    height: 80px;
   }
 }
