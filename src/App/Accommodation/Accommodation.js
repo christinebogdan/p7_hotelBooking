@@ -5,11 +5,16 @@ import Gallery from "./Gallery/Gallery";
 import Main from "./Main/Main";
 
 class Accommodation extends React.Component {
-  // what is this syntax:
-  // let { match {params}} = this.props;
+  // why does this not work outside of render method?
+  // const {match: {params: {id}}} = this.props;
 
   render() {
-    let id = this.props.match.params.id;
+    const {
+      match: {
+        params: { id },
+      },
+    } = this.props;
+    // let id = this.props.match.params.id;
     return (
       <div className="accommodation">
         <Gallery id={id} />
