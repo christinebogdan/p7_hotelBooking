@@ -16,7 +16,8 @@ class Main extends React.Component {
             // element id property in each accommodation object?
             id={index}
             // id={accommodation.id}
-            key={accommodation.id}
+            key={index}
+            // key={accommodation.id}
           />
         ))}
       </ul>
