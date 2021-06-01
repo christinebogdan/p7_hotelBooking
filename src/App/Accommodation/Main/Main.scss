@@ -1,5 +1,119 @@
 @import "../../App.scss";
 
-.main {
-  background-color: yellow;
+.intro {
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  @include responsive(desktop) {
+    margin-top: 30px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  &__header {
+    flex-basis: 100%;
+    @include responsive(desktop) {
+      flex-basis: auto;
+    }
+    &--title {
+      margin: 0;
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 26px;
+      color: #ff6060;
+      @include responsive(desktop) {
+        font-size: 36px;
+        line-height: 51px;
+      }
+    }
+    &--location {
+      margin: 0;
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      color: #ff6060;
+      @include responsive(desktop) {
+        margin: 5px 0 0 0;
+        font-size: 18px;
+        line-height: 26px;
+      }
+    }
+    &--tags {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-basis: 100%;
+    justify-content: space-between;
+    margin-top: 16px;
+    @include responsive(desktop) {
+      flex-basis: auto;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      align-self: flex-start;
+      margin-top: 0;
+    }
+  }
+  &__host {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @include responsive(desktop) {
+      flex-wrap: nowrap;
+      align-items: center;
+      justify-content: flex-end;
+      width: 100%;
+    }
+    // wie bekomme ich den namen zweizeilig?
+    &--name {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 17px;
+      text-align: right;
+      color: #ff6060;
+      margin: 0 10.5px 0 0;
+      width: 70px;
+      @include responsive(desktop) {
+        font-size: 18px;
+        line-height: 26px;
+        width: 93px;
+      }
+    }
+    &--picture img {
+      object-fit: cover;
+      width: 32px;
+      height: 32px;
+      border-radius: 50px;
+      @include responsive(desktop) {
+        width: 62px;
+        height: 64px;
+      }
+    }
+  }
+  &__rating {
+    display: flex;
+    order: -1;
+    @include responsive(desktop) {
+      order: 0;
+      margin-top: 24px;
+    }
+  }
+}
+
+.collapse {
+  display: flex;
+  margin-top: 16.5px;
+  @include responsive(desktop) {
+    margin-top: 24px;
+  }
 }
