@@ -1,0 +1,12 @@
+@import "../../../App.scss";
+
+.star {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+  @include responsive(desktop) {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+}
