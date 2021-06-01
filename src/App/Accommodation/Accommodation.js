@@ -3,6 +3,7 @@ import { withRouter } from "react-router";
 import "./Accommodation.scss";
 import Gallery from "./Gallery/Gallery";
 import Main from "./Main/Main";
+import json from "../../data.json";
 
 class Accommodation extends React.Component {
   // why does this not work outside of render method?
@@ -14,11 +15,18 @@ class Accommodation extends React.Component {
         params: { id },
       },
     } = this.props;
-    // let id = this.props.match.params.id;
+
     return (
       <div className="accommodation">
         <Gallery id={id} />
-        <Main />
+        <Main
+          id={id}
+          rating={json[id].rating}
+          range="5"
+          tags={json[id].tags}
+          amenities={json[id].Amenities}
+          description={json[id].description}
+        />
       </div>
     );
   }

@@ -49,16 +49,13 @@ class Gallery extends React.Component {
           return (
             // gibt es noch eine andere Möglichkeit als so? Oder liegt das daran,
             // dass alles komplett neu gerendert wird?
-            // Wird alles komplett neu gerendert, wenns ich der state ändert?
+            // Wird alles komplett neu gerendert, wenn sich der state ändert?
+            // Warum wird alles neu gerendert? Weil der state überall genutzt wird?
             <div
               className={this.state.current === index ? "active" : "inactive"}
+              key={index}
             >
-              <img
-                src={image}
-                alt=""
-                key={index}
-                className="gallery__image"
-              ></img>
+              <img src={image} alt="" className="gallery__image"></img>
             </div>
           );
         })}
