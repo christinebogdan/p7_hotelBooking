@@ -6,7 +6,7 @@ import React from "react";
 class Nav extends React.Component {
   render() {
     return (
-      <div className="header">
+      <header className="header">
         <img src={logo} alt="logo" className="header__logo"></img>
         <nav>
           <ul className="nav">
@@ -22,7 +22,7 @@ class Nav extends React.Component {
             </li>
           </ul>
         </nav>
-      </div>
+      </header>
     );
   }
 }
