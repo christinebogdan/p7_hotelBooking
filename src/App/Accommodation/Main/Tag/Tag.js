@@ -4,9 +4,15 @@ import React from "react";
 class Tag extends React.Component {
   render() {
     return (
-      <div>
-        <p>Text</p>
-      </div>
+      <>
+        {this.props.tags.map((tag, index) => {
+          return (
+            <span className="tag" key={index}>
+              {tag}
+            </span>
+          );
+        })}
+      </>
     );
   }
 }
