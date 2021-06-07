@@ -1,7 +1,11 @@
 @import "../../../App.scss";
 
 .collapse__item {
-  flex: 1 1 0;
+  // flex: 1 1 0;
+  flex-basis: 100%;
+  @include responsive(desktop) {
+    flex-basis: 48%;
+  }
   &--title {
     background: #ff6060;
     border-radius: 5px;
@@ -17,6 +21,7 @@
     position: relative;
     display: flex;
     justify-content: space-between;
+    user-select: none;
     & p {
       margin-left: 11.5px;
     }
@@ -30,11 +35,53 @@
       }
     }
   }
-  &--arrow {
+  &--arrow-up {
     margin-right: 11px;
+    user-select: none;
     @include responsive(desktop) {
       width: 26.5px;
       margin-right: 19px;
     }
   }
+  &--arrow-down {
+    transform: rotate(180deg);
+    margin-right: 11px;
+    user-select: none;
+    @include responsive(desktop) {
+      width: 26.5px;
+      margin-right: 19px;
+    }
+  }
+
+  &--body {
+    font-size: 12px;
+    line-height: 142.6%;
+    color: #ff6060;
+    padding: 23px 12px;
+    background: #f7f7f7;
+    border-radius: 10px;
+    position: relative;
+    top: -6px;
+    z-index: -1;
+    @include responsive(desktop) {
+      font-size: 18px;
+      line-height: 26px;
+      padding: 40px 20px;
+      top: -10px;
+    }
+    & ul {
+      padding-left: 0;
+      list-style: none;
+    }
+  }
+  & + .collapse__item {
+    margin-top: 20px;
+    @include responsive(desktop) {
+      margin-top: 0;
+    }
+  }
+}
+
+.closed {
+  display: none;
 }

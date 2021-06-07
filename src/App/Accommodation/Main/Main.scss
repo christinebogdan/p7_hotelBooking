@@ -113,7 +113,10 @@
 .collapse {
   display: flex;
   margin-top: 16.5px;
+  flex-wrap: wrap;
   @include responsive(desktop) {
     margin-top: 24px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
   }
 }
