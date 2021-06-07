@@ -1,9 +1,9 @@
 import React from "react";
-import "./Main.scss";
 import Tag from "./Tag/Tag";
 import json from "../../../data.json";
 import Rating from "./Rating/Rating";
 import Collapse from "./Collapse/Collapse";
+import "./Main.scss";
 
 class Main extends React.Component {
   constructor(props) {

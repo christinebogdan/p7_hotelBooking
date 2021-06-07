@@ -6,6 +6,7 @@ import Footer from "./Footer/Footer";
 import { BrowserRouter as Switch, Route } from "react-router-dom";
 import React from "react";
 import Accommodation from "./Accommodation/Accommodation";
+import About from "./About/About";
 
 class App extends React.Component {
   render() {
@@ -19,7 +20,9 @@ class App extends React.Component {
           <Route path="/accommodations/:id">
             <Accommodation />
           </Route>
-          <Route path="/about">{/* <About /> */}</Route>
+          <Route path="/about">
+            <About />
+          </Route>
         </Switch>
         <Footer />
       </div>

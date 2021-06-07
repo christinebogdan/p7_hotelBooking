@@ -5,6 +5,7 @@ import React from "react";
 
 class Home extends React.Component {
   render() {
+    console.log("Home is loaded");
     return (
       <div className="home">
         <Hero />
