@@ -1,0 +1,50 @@
+@import "./App.scss";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+  @include responsive(desktop) {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  &__logo {
+    height: 40px;
+    @include responsive(desktop) {
+      height: 62px;
+    }
+  }
+  &__nav {
+    display: flex;
+  }
+}
+
+.nav {
+  list-style: none;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  text-decoration: none;
+  display: flex;
+  font-size: 12px;
+  line-height: 17px;
+  text-transform: uppercase;
+  @include responsive(desktop) {
+    text-transform: initial;
+    font-size: 24px;
+    line-height: 142.6%;
+  }
+  &__item {
+    align-items: flex-end;
+    margin-left: 20px;
+    @include responsive(desktop) {
+      margin-left: 70px;
+    }
+    &--li {
+      color: #ff6060;
+      text-decoration: none;
+    }
+  }
+}
