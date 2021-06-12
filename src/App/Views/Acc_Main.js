@@ -1,6 +1,5 @@
 import React from "react";
 import Tag from "../Components/Tag";
-import json from "../../data.json";
 import Rating from "../Components/Rating";
 import Collapse from "../Components/Collapse";
 import "../Styles/Acc_Main.scss";
@@ -8,29 +7,33 @@ import "../Styles/Acc_Main.scss";
 class Main extends React.Component {
   constructor(props) {
     super(props);
-    this.id = this.props.id;
-    this.rating = this.props.rating;
+    this.accommodation = this.props.accommodation;
+    this.rating = this.accommodation.rating;
     this.range = this.props.range;
-    this.tags = this.props.tags;
-    this.description = this.props.description;
-    this.amenities = this.props.amenities;
+    this.tags = this.accommodation.tags;
+    this.description = this.accommodation.description;
+    this.amenities = this.accommodation.Amenities;
+    this.title = this.accommodation.title;
+    this.location = this.accommodation.location;
+    this.name = this.accommodation.host.name;
+    this.picture = this.accommodation.host.picture;
   }
   render() {
     return (
       <main>
         <div className="intro">
           <div className="intro__header">
-            <h1 className="intro__header--title">{json[this.id].title}</h1>
-            <p className="intro__header--location">{json[this.id].location}</p>
+            <h1 className="intro__header--title">{this.title}</h1>
+            <p className="intro__header--location">{this.location}</p>
             <div className="intro__header--tags">
               <Tag tags={this.tags} />
             </div>
           </div>
           <div className="intro__profile">
             <div className="intro__host">
-              <p className="intro__host--name">{json[this.id].host.name}</p>
+              <p className="intro__host--name">{this.name}</p>
               <div className="intro__host--picture">
-                <img src={json[this.id].host.picture} alt=""></img>
+                <img src={this.picture} alt=""></img>
               </div>
             </div>
             <div className="intro__rating">
