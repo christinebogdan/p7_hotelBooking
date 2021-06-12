@@ -1,6 +1,7 @@
 import React from "react";
-import Collapse from "../Components/Collapse";
-import "../Styles/About.scss";
+import Collapse from "../components/collapse";
+import "../styles/about.scss";
+import Hero from "../components/hero";
 
 class About extends React.Component {
   constructor(props) {
@@ -18,15 +19,22 @@ class About extends React.Component {
   }
   render() {
     return (
-      <ul className="about__main">
-        {Object.keys(this.textInput).map((key, index) => {
-          return (
-            <li key={key}>
-              <Collapse title={key} content={this.textInput[key]} />
-            </li>
-          );
-        })}
-      </ul>
+      <>
+        <Hero page="about" />
+        <ul className="about__main">
+          {Object.keys(this.textInput).map((key, index) => {
+            return (
+              <li key={key}>
+                <Collapse
+                  title={key}
+                  content={this.textInput[key]}
+                  page="about"
+                />
+              </li>
+            );
+          })}
+        </ul>
+      </>
     );
   }
 }

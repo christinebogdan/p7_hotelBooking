@@ -1,22 +1,22 @@
 import React from "react";
-import Tag from "../Components/Tag";
-import Rating from "../Components/Rating";
-import Collapse from "../Components/Collapse";
-import "../Styles/Acc_Main.scss";
+import Tag from "../components/tag";
+import Rating from "../components/rating";
+import Collapse from "../components/collapse";
+import "../styles/acc_main.scss";
 
 class Main extends React.Component {
   constructor(props) {
     super(props);
     this.accommodation = this.props.accommodation;
-    this.rating = this.accommodation.rating;
+    this.rating = this.accommodation?.rating;
     this.range = this.props.range;
-    this.tags = this.accommodation.tags;
-    this.description = this.accommodation.description;
-    this.amenities = this.accommodation.Amenities;
-    this.title = this.accommodation.title;
-    this.location = this.accommodation.location;
-    this.name = this.accommodation.host.name;
-    this.picture = this.accommodation.host.picture;
+    this.tags = this.accommodation?.tags;
+    this.description = this.accommodation?.description;
+    this.amenities = this.accommodation?.Amenities;
+    this.title = this.accommodation?.title;
+    this.location = this.accommodation?.location;
+    this.name = this.accommodation?.host?.name;
+    this.picture = this.accommodation?.host?.picture;
   }
   render() {
     return (
@@ -42,8 +42,16 @@ class Main extends React.Component {
           </div>
         </div>
         <div className="collapse">
-          <Collapse title="Description" content={this.description} />
-          <Collapse title="Amenities" content={this.amenities} />
+          <Collapse
+            title="Description"
+            content={this.description}
+            page="accommodation"
+          />
+          <Collapse
+            title="Amenities"
+            content={this.amenities}
+            page="accommodation"
+          />
         </div>
       </main>
     );

@@ -1,13 +1,13 @@
 // import logo from "./logo.svg";
-import "./Styles/App.scss";
-import Nav from "./Components/Nav";
-import Home from "./Views/Home";
-import Footer from "./Components/Footer";
+import "./styles/app.scss";
+import Nav from "./components/nav";
+import Home from "./views/home";
+import Footer from "./components/footer";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import React from "react";
-import Accommodation from "./Views/Accommodation";
-import About from "./Views/About";
-import NotFound from "./Views/NotFound";
+import Accommodation from "./views/accommodation";
+import About from "./views/about";
+import NotFound from "./views/notFound";
 
 class App extends React.Component {
   render() {

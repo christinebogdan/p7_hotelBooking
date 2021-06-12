@@ -1,6 +1,6 @@
 import React from "react";
-import "../Styles/Collapse.scss";
-import arrow from "../Images/arrow-mobile.svg";
+import "../styles/collapse.scss";
+import arrow from "../images/arrow-mobile.svg";
 
 class Collapse extends React.Component {
   constructor(props) {
@@ -8,6 +8,8 @@ class Collapse extends React.Component {
     this.state = {
       open: false,
     };
+    this.title = this.props.title;
+    this.page = this.props.page;
   }
 
   // why do I need arrow function?
@@ -16,10 +18,15 @@ class Collapse extends React.Component {
     this.setState(this.state.open === false ? { open: true } : { open: false });
   };
 
+  // does this go into the render function or is this above it?
   render() {
     const renderBody = () => {
       if (typeof this.props.content === "string") {
-        return <p className="body__description">{this.props.content}</p>;
+        return (
+          <p className={`body__description ${this.page}__description`}>
+            {this.props.content}
+          </p>
+        );
       } else {
         return (
           <ul>
@@ -37,8 +44,11 @@ class Collapse extends React.Component {
 
     return (
       <div className="collapse__item">
-        <div className="collapse__item--title" onClick={this.toggleCollapse}>
-          <p>{this.props.title}</p>
+        <div
+          className={`collapse__item--title ${this.page}__title`}
+          onClick={this.toggleCollapse}
+        >
+          <p>{this.title}</p>
           <img
             src={arrow}
             alt=""

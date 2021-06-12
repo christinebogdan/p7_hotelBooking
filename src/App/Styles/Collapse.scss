@@ -1,7 +1,6 @@
-@import "./App.scss";
+@import "./app.scss";
 
 .collapse__item {
-  // flex: 1 1 0;
   flex-basis: 100%;
   @include responsive(desktop) {
     flex-basis: 48%;
@@ -13,8 +12,6 @@
     font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
-    font-size: 13px;
-    line-height: 19px;
     color: #ffffff;
     display: flex;
     align-items: center;
@@ -28,8 +25,6 @@
     @include responsive(desktop) {
       height: 52px;
       border-radius: 10px;
-      font-size: 18px;
-      line-height: 26px;
       & p {
         margin-left: 20px;
       }
@@ -54,8 +49,6 @@
   }
 
   &--body {
-    font-size: 12px;
-    line-height: 142.6%;
     color: #ff6060;
     padding: 23px 12px;
     background: #f7f7f7;
@@ -64,8 +57,6 @@
     top: -6px;
     z-index: -1;
     @include responsive(desktop) {
-      font-size: 18px;
-      line-height: 26px;
       padding: 40px 20px;
       top: -10px;
     }
@@ -84,4 +75,42 @@
 
 .closed {
   display: none;
+}
+
+///// page specific styling //////@at-root
+
+.accommodation__title {
+  font-size: 13px;
+  line-height: 19px;
+  @include responsive(desktop) {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+.accommodation__description {
+  font-size: 12px;
+  line-height: 17px;
+  @include responsive(desktop) {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+.about__title {
+  font-size: 13px;
+  line-height: 19px;
+  @include responsive(desktop) {
+    font-size: 24px;
+    line-height: 34px;
+  }
+}
+
+.about__description {
+  font-size: 12px;
+  line-height: 17px;
+  @include responsive(desktop) {
+    font-size: 24px;
+    line-height: 34px;
+  }
 }

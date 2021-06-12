@@ -1,5 +1,5 @@
-import "../Styles/Home_Main.scss";
-import Card from "../Components/Card";
+import "../styles/home_main.scss";
+import Card from "../components/card";
 import json from "../../data.json";
 import React from "react";
 

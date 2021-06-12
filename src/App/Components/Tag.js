@@ -1,4 +1,4 @@
-import "../Styles/Tag.scss";
+import "../styles/tag.scss";
 import React from "react";
 
 class Tag extends React.Component {

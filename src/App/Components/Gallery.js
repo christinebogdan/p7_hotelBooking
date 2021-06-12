@@ -1,7 +1,7 @@
 import React from "react";
-import "../Styles/Gallery.scss";
-import arrowLeft from "../Images/arrow-left.png";
-import arrowRight from "../Images/arrow-right.png";
+import "../styles/gallery.scss";
+import arrowLeft from "../images/arrow-left.png";
+import arrowRight from "../images/arrow-right.png";
 
 class Gallery extends React.Component {
   constructor(props) {

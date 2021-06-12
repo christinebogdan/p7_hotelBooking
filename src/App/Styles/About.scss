@@ -1,4 +1,4 @@
-@import "./App.scss";
+@import "./app.scss";
 
 .about__main {
   list-style: none;
@@ -6,8 +6,8 @@
   margin-right: 20px;
   padding: 0;
   @include responsive(desktop) {
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 200px;
+    margin-right: 200px;
   }
   & li {
     margin-top: 20px;

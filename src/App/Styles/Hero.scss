@@ -1,23 +1,20 @@
-@import "./App.scss";
+@import "./app.scss";
 
-.homepage {
-  background-image: url("../Images/IMGhero.png");
+.hero__wrapper {
   background-position: center;
   margin-top: 20px;
   position: relative;
-  height: 111px;
   border-radius: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   @include responsive(desktop) {
-    height: 223px;
     margin-top: 63px;
   }
 }
 
-.homepage__img__layer {
+.hero__img__layer {
   background: #000000;
   mix-blend-mode: darken;
   opacity: 0.3;
@@ -25,6 +22,18 @@
   position: absolute;
   height: 100%;
   width: 100%;
+}
+
+////// Page specific styling //////
+
+.homepage {
+  background-image: url("../images/IMGhero.png");
+  height: 111px;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  @include responsive(desktop) {
+    height: 223px;
+  }
 }
 
 .homepage__headline {
@@ -44,4 +53,22 @@
   color: #ffffff;
   position: relative;
   z-index: 10;
+}
+
+.about {
+  background-image: url("../images/kalen-emsley-Bkci_8qcdvQ-unsplash\ 2.png");
+  height: 223px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  margin-left: 20px;
+  margin-right: 20px;
+  @include responsive(desktop) {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+}
+
+.about__headline {
+  display: none;
 }

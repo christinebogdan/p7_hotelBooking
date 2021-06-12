@@ -1,9 +1,9 @@
 import React from "react";
 import { withRouter } from "react-router";
 import { Redirect } from "react-router-dom";
-import "../Styles/Accommodation.scss";
-import Gallery from "../Components/Gallery";
-import Main from "./Acc_Main";
+import "../styles/accommodation.scss";
+import Gallery from "../components/gallery";
+import Main from "./acc_main";
 import json from "../../data.json";
 
 class Accommodation extends React.Component {

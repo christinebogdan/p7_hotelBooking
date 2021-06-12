@@ -1,7 +1,7 @@
-import "../Styles/Rating.scss";
+import "../styles/rating.scss";
 import React from "react";
-import starRed from "../Images/starred.svg";
-import starGrey from "../Images/stargrey.svg";
+import starRed from "../images/starred.svg";
+import starGrey from "../images/stargrey.svg";
 
 class Rating extends React.Component {
   constructor(props) {

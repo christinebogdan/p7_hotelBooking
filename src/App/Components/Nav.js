@@ -1,5 +1,5 @@
-import "../Styles/Nav.scss";
-import logo from "../Images/LOGO_nav.svg";
+import "../styles/nav.scss";
+import logo from "../images/LOGO_nav.svg";
 import { Link } from "react-router-dom";
 import React from "react";
 
