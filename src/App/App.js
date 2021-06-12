@@ -26,6 +26,9 @@ class App extends React.Component {
               <Route path="/about">
                 <About />
               </Route>
+              <Route path="/404">
+                <NotFound />
+              </Route>
               <Route path="*">
                 <NotFound />
               </Route>
