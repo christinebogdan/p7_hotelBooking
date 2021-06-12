@@ -1,32 +1,25 @@
 import React from "react";
 import { withRouter } from "react-router";
+import { Redirect } from "react-router-dom";
 import "../Styles/Accommodation.scss";
 import Gallery from "../Components/Gallery";
 import Main from "./Acc_Main";
 import json from "../../data.json";
 
 class Accommodation extends React.Component {
-  // why does this not work outside of render method?
-  // const {match: {params: {id}}} = this.props;
+  constructor(props) {
+    super(props);
+    this.id = this.props.match.params.id;
+    this.accommodation = json.find((entry) => entry.id === this.id);
+  }
 
   render() {
-    const {
-      match: {
-        params: { id },
-      },
-    } = this.props;
-
-    return (
+    return this.accommodation === undefined ? (
+      <Redirect to="/404" />
+    ) : (
       <div className="accommodation">
-        <Gallery id={id} />
-        <Main
-          id={id}
-          rating={json[id].rating}
-          range="5"
-          tags={json[id].tags}
-          amenities={json[id].Amenities}
-          description={json[id].description}
-        />
+        <Gallery accommodation={this.accommodation} />
+        <Main accommodation={this.accommodation} range="5" />
       </div>
     );
   }
