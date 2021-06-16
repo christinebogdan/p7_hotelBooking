@@ -28,6 +28,7 @@
   font-size: 18px;
   line-height: 26px;
   margin: 11px 0 0 0;
+  padding: 0 80px;
   @include responsive(desktop) {
     font-size: 36px;
     line-height: 51px;
