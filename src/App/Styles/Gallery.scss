@@ -24,7 +24,7 @@
 
 // wieso hat der hier ein paar pixel mehr und ich muss height extra setzen?
 
-.active {
+.is-active {
   display: block;
   height: 255px;
   @include responsive(desktop) {
