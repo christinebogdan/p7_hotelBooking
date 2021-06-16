@@ -21,7 +21,13 @@
   }
 }
 
+nav {
+  display: flex;
+  align-items: stretch;
+}
+
 .nav {
+  align-items: center;
   list-style: none;
   font-family: Montserrat;
   font-style: normal;
@@ -31,6 +37,8 @@
   font-size: 12px;
   line-height: 17px;
   text-transform: uppercase;
+  margin-bottom: 0;
+  margin-top: 0;
   @include responsive(desktop) {
     text-transform: initial;
     font-size: 24px;

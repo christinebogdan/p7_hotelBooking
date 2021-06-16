@@ -51,7 +51,9 @@ class Gallery extends React.Component {
             // Wird alles komplett neu gerendert, wenn sich der state ändert?
             // Warum wird alles neu gerendert? Weil der state überall genutzt wird?
             <div
-              className={this.state.current === index ? "active" : "inactive"}
+              className={
+                this.state.current === index ? "is-active" : "inactive"
+              }
               key={index}
             >
               <img src={image} alt="" className="gallery__image"></img>
