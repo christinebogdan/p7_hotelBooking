@@ -9,8 +9,10 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  height: 111px;
   @include responsive(desktop) {
     margin-top: 63px;
+    height: 223px;
   }
 }
 
@@ -24,17 +26,13 @@
   width: 100%;
 }
 
-////// Page specific styling //////
-
-.homepage {
-  background-image: url("../images/IMGhero.png");
-  height: 111px;
-  background-repeat: no-repeat;
+.hero_image {
+  height: 100%;
+  width: 100%;
+  border-radius: 25px;
   object-fit: cover;
-  @include responsive(desktop) {
-    height: 223px;
-  }
 }
+////// Page specific styling //////
 
 .homepage__headline {
   font-family: Montserrat;
@@ -51,16 +49,11 @@
     text-align: center;
   }
   color: #ffffff;
-  position: relative;
-  z-index: 10;
+  position: absolute;
 }
 
 .about {
-  background-image: url("../images/kalen-emsley-Bkci_8qcdvQ-unsplash\ 2.png");
   height: 223px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center bottom;
   margin-left: 20px;
   margin-right: 20px;
   @include responsive(desktop) {
