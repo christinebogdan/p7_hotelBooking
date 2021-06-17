@@ -3,12 +3,13 @@
 .header {
   display: flex;
   justify-content: space-between;
-  margin-top: 40px;
+  margin-top: 20px;
   margin-left: 20px;
   margin-right: 20px;
   @include responsive(desktop) {
     margin-left: 100px;
     margin-right: 100px;
+    margin-top: 40px;
   }
   &__logo {
     height: 40px;

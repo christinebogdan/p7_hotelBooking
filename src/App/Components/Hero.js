@@ -7,7 +7,6 @@ class Hero extends React.Component {
   constructor(props) {
     super(props);
     this.page = this.props.page;
-    console.log(this.page);
   }
   render() {
     return (
