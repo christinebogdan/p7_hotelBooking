@@ -12,12 +12,12 @@ class Card extends React.Component {
   }
   render() {
     return (
-      <li className="card">
+      <li className={this.type}>
         <Link
           to={`/accommodations/${this.id}`}
           className={`${this.type}__link`}
         >
-          <div className="card__wrap">
+          <div className={`${this.type}__wrap`}>
             <img src={this.cover} alt="" className={`${this.type}__img`}></img>
             <div className={`${this.type}__layer`}></div>
             <h2 className={`${this.type}__title`}>{this.title}</h2>
