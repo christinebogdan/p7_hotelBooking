@@ -1,7 +1,7 @@
 import React from "react";
-import Collapse from "../components/collapse";
+import Collapse from "../components/Collapse";
 import "../styles/about.scss";
-import Hero from "../components/hero";
+import Hero from "../components/Hero";
 
 class About extends React.Component {
   constructor(props) {

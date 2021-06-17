@@ -1,11 +1,11 @@
-import Nav from "../components/nav";
-import Home from "../views/home";
-import Footer from "../components/footer";
+import Nav from "../components/Nav";
+import Home from "../views/Home";
+import Footer from "../components/Footer";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import React from "react";
-import Accommodation from "../views/accommodation";
-import About from "../views/about";
-import NotFound from "../views/notFound";
+import Accommodation from "../views/Accommodation";
+import About from "../views/About";
+import NotFound from "../views/NotFound";
 
 const routes = [
   { path: "/", component: Home, exact: true },

@@ -12,13 +12,10 @@ class Collapse extends React.Component {
     this.page = this.props.page;
   }
 
-  // why do I need arrow function?
   toggleCollapse = (e) => {
-    // why do I wrap open:true in {}
     this.setState(this.state.open === false ? { open: true } : { open: false });
   };
 
-  // does this go into the render function or is this above it?
   render() {
     const renderBody = () => {
       if (typeof this.props.content === "string") {
@@ -72,14 +69,3 @@ class Collapse extends React.Component {
 }
 
 export default Collapse;
-
-// why does this not work
-// {typeof this.props.content === "Array" ? this.props.content.map((item, index) => { return (<div>Array</div>)}) : return <div>Body</div> }
-
-// why does it not work, when I put
-
-//   else {
-//  this.props.content.map((item, index) => {
-//    return <p className="body__amenities">{item}</p>;
-//  });
-//  }

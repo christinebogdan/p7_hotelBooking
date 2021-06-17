@@ -8,16 +8,19 @@ class Card extends React.Component {
     this.id = this.props.id;
     this.cover = this.props.cover;
     this.title = this.props.title;
+    this.type = this.props.type;
   }
   render() {
     return (
-      // where do I need to set the key? Here or in Main?
       <li className="card">
-        <Link to={`/accommodations/${this.id}`} className="card__link">
+        <Link
+          to={`/accommodations/${this.id}`}
+          className={`${this.type}__link`}
+        >
           <div className="card__wrap">
-            <img src={this.cover} alt="" className="card__img"></img>
-            <div className="card__layer"></div>
-            <h2 className="card__title">{this.title}</h2>
+            <img src={this.cover} alt="" className={`${this.type}__img`}></img>
+            <div className={`${this.type}__layer`}></div>
+            <h2 className={`${this.type}__title`}>{this.title}</h2>
           </div>
         </Link>
       </li>

@@ -2,8 +2,8 @@ import React from "react";
 import { withRouter } from "react-router";
 import { Redirect } from "react-router-dom";
 import "../styles/accommodation.scss";
-import Gallery from "../components/gallery";
-import Main from "./acc_main";
+import Gallery from "../components/Gallery";
+import Main from "./Acc_main";
 import json from "../../data.json";
 
 class Accommodation extends React.Component {

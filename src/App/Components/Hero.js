@@ -1,11 +1,7 @@
-// import image from "./IMGhero.png";
 import React from "react";
 import "../styles/hero.scss";
 import homepageHero from "../images/hero_home.png";
 import aboutHero from "../images/hero_about.png";
-
-// do I need to set h1 with z-index or is there
-// another way to place above the layer?
 
 class Hero extends React.Component {
   constructor(props) {

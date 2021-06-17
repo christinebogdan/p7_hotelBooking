@@ -1,7 +1,7 @@
 import React from "react";
-import Tag from "../components/tag";
-import Rating from "../components/rating";
-import Collapse from "../components/collapse";
+import Tag from "../components/Tag";
+import Rating from "../components/Rating";
+import Collapse from "../components/Collapse";
 import "../styles/acc_main.scss";
 
 class Main extends React.Component {

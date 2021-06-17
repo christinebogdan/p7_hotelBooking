@@ -11,10 +11,8 @@ class Gallery extends React.Component {
     this.sliderLength = this.images.length;
   }
 
-  // cannot use normal function because every new functiond efines its own this value?
   nextImage = () => {
     this.setState(
-      // why did this not work with this.sliderLength
       this.state.current === this.images.length - 1
         ? { current: 0 }
         : { current: this.state.current + 1 }
@@ -46,10 +44,6 @@ class Gallery extends React.Component {
         ></img>
         {this.images.map((image, index) => {
           return (
-            // gibt es noch eine andere Möglichkeit als so? Oder liegt das daran,
-            // dass alles komplett neu gerendert wird?
-            // Wird alles komplett neu gerendert, wenn sich der state ändert?
-            // Warum wird alles neu gerendert? Weil der state überall genutzt wird?
             <div
               className={
                 this.state.current === index ? "is-active" : "inactive"
@@ -64,7 +58,5 @@ class Gallery extends React.Component {
     );
   }
 }
-
-// why did a {" "} appear above the map?
 
 export default Gallery;

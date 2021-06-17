@@ -1,6 +1,6 @@
 import "../styles/nav.scss";
 import logo from "../images/LOGO_nav.svg";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import React from "react";
 
 class Nav extends React.Component {
@@ -11,14 +11,23 @@ class Nav extends React.Component {
         <nav>
           <ul className="nav">
             <li className="nav__item">
-              <Link to="/" className="nav__item--li">
+              <NavLink
+                to="/"
+                exact={true}
+                className="nav__item--li"
+                activeStyle={{ textDecoration: "underline" }}
+              >
                 Home
-              </Link>
+              </NavLink>
             </li>
             <li className="nav__item">
-              <Link to="/about" className="nav__item--li">
+              <NavLink
+                to="/about"
+                className="nav__item--li"
+                activeStyle={{ textDecoration: "underline" }}
+              >
                 About
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </nav>
@@ -28,4 +37,3 @@ class Nav extends React.Component {
 }
 
 export default Nav;
-//
