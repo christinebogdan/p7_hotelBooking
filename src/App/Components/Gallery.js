@@ -33,13 +33,13 @@ class Gallery extends React.Component {
         <img
           src={arrowLeft}
           alt="arrow-left"
-          className="arrow-left"
+          className={this.sliderLength === 1 ? "inactive" : "arrow-left"}
           onClick={this.prevImage}
         ></img>
         <img
           src={arrowRight}
           alt="arrow-right"
-          className="arrow-right"
+          className={this.sliderLength === 1 ? "inactive" : "arrow-right"}
           onClick={this.nextImage}
         ></img>
         {this.images.map((image, index) => {
