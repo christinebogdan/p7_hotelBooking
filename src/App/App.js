@@ -10,7 +10,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="container">
-        <BrowserRouter>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
           <Nav />
           <div className="renderedPage">
             <Router />
