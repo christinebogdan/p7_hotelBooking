@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/p8_HotelBooking/static/css/main.c5d395aa.chunk.css",
-    "main.js": "/p8_HotelBooking/static/js/main.62a43300.chunk.js",
-    "main.js.map": "/p8_HotelBooking/static/js/main.62a43300.chunk.js.map",
+    "main.js": "/p8_HotelBooking/static/js/main.2a118465.chunk.js",
+    "main.js.map": "/p8_HotelBooking/static/js/main.2a118465.chunk.js.map",
     "runtime-main.js": "/p8_HotelBooking/static/js/runtime-main.f53a417a.js",
     "runtime-main.js.map": "/p8_HotelBooking/static/js/runtime-main.f53a417a.js.map",
-    "static/js/2.144d1ae5.chunk.js": "/p8_HotelBooking/static/js/2.144d1ae5.chunk.js",
-    "static/js/2.144d1ae5.chunk.js.map": "/p8_HotelBooking/static/js/2.144d1ae5.chunk.js.map",
+    "static/js/2.1c4cbf4c.chunk.js": "/p8_HotelBooking/static/js/2.1c4cbf4c.chunk.js",
+    "static/js/2.1c4cbf4c.chunk.js.map": "/p8_HotelBooking/static/js/2.1c4cbf4c.chunk.js.map",
     "static/js/3.c5b0f4f9.chunk.js": "/p8_HotelBooking/static/js/3.c5b0f4f9.chunk.js",
     "static/js/3.c5b0f4f9.chunk.js.map": "/p8_HotelBooking/static/js/3.c5b0f4f9.chunk.js.map",
     "index.html": "/p8_HotelBooking/index.html",
     "static/css/main.c5d395aa.chunk.css.map": "/p8_HotelBooking/static/css/main.c5d395aa.chunk.css.map",
-    "static/js/2.144d1ae5.chunk.js.LICENSE.txt": "/p8_HotelBooking/static/js/2.144d1ae5.chunk.js.LICENSE.txt",
+    "static/js/2.1c4cbf4c.chunk.js.LICENSE.txt": "/p8_HotelBooking/static/js/2.1c4cbf4c.chunk.js.LICENSE.txt",
     "static/media/LOGO_nav.c9333877.svg": "/p8_HotelBooking/static/media/LOGO_nav.c9333877.svg",
     "static/media/Logo_white.879b5009.svg": "/p8_HotelBooking/static/media/Logo_white.879b5009.svg",
     "static/media/arrow-mobile.69a7adab.svg": "/p8_HotelBooking/static/media/arrow-mobile.69a7adab.svg",
@@ -22,8 +22,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.f53a417a.js",
-    "static/js/2.144d1ae5.chunk.js",
+    "static/js/2.1c4cbf4c.chunk.js",
     "static/css/main.c5d395aa.chunk.css",
-    "static/js/main.62a43300.chunk.js"
+    "static/js/main.2a118465.chunk.js"
   ]
 }
