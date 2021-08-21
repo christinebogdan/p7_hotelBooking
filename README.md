@@ -1,70 +1,80 @@
-# Getting Started with Create React App
+# Kasa | Develop a Web App with React and React Router
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Developed Skills
 
-## Available Scripts
+- Create React class components
+- Develop the routes of an application with React Router
+- Initialize a React web app
 
-In the project directory, you can run:
+## Description
 
-### `npm start`
+Kasa is one of the leading rental companies in Europe. They have been in the apartment rental business for almost ten years.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Aim of the project was to **migrate to an exclusively JavaScript stack with React on the frontend** (and Node.js on the backend).
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+As no backend was available for this project, a basic JSON file with 20 sample apartment listings was supplied. The interface design was also supplied in form of mock-ups on Figma.
 
-### `npm test`
+## Objectives
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Develop an entire React application, including the React components and the React Router routes.
 
-### `npm run build`
+## Functional Requirements
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Photo scrolling functionality in the gallery (gallery component):
+  - If the user is on the first image of the gallery and clicks on Previous Image, it displays the last image.
+  - Conversely, if the user is on the last image in the gallery and clicks on Next Image, it displays the first image.
+  - If there is only one image, the Next and Previous buttons do not appear.
+  - The gallery must always remain at the same height (the one indicated on the Figma model). The images must be cut and centered to fit within the image frame.
+- Collapse: By default, Collapse is closed at page initialization.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+  - If the Collapse is open, the user clicks to close it.
+  - Conversely, if the Collapse is closed, a click opens it.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Design Requirements
 
-### `npm run eject`
+- realize the interface design according to the mock-ups on Figma
+- take all design ressources directly from the mock-ups (logo, icons, etc).
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Technical constraints
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### React
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- It is imperative to use these elements of React for quality code:
+- Split code into modular and reusable components.
+- One component per file.
+- Logical structure of the different files.
+- Use of props between components.
+- Use of state in components when necessary.
+- Event management.
+- Class-based components, no function components.
+- Lists: React lists should be used as much as possible (ex. for iterating,
+  maps, etc).
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### React Router
 
-## Learn More
+- The route parameters are managed by React Router in the URL to
+  retrieve the information for each listing.
+- One page per route.
+- The page 404 is returned for each non-existent route, or if a value in
+  the URL is not part of the data filled in.
+- The logic of the router is gathered in a single file
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### General
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- no backend available, instead basic JSON file with 20 sample apartment listings was supplied.
+- The code must not produce errors or warnings in the console.
 
-### Code Splitting
+### Tools
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- [Create React App](https://create-react-app.dev/docs/getting-started/)
+- [React Router](https://reactrouter.com/web/guides/quick-start)
+- Styling: The use of SASS is optional. CSS is to be used by default.
+- No React external libraries
 
-### Analyzing the Bundle Size
+## Challenges & Achievements
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+n/A
 
-### Making a Progressive Web App
+## Demo
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Link to page: [Kasa](https://christinebogdan.github.io/p8_HotelBooking/)
